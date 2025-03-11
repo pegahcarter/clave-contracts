@@ -23,7 +23,7 @@ contract CloudRecoveryModule is BaseRecovery {
     uint256 public immutable TIMELOCK;
 
     // Cloud guardian addresses for each account
-    mapping(address => address) cloudGuardian;
+    mapping(address => address) public cloudGuardian;
 
     /**
      * @notice Emitted when a new cloud guardian is set for an account
